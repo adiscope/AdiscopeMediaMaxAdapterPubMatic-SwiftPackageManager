@@ -13,7 +13,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.5.1"),
+        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.6.2"),
     ],
     targets: [
         .target(
@@ -22,30 +22,24 @@ let package = Package(
                 .target(name: "AdiscopeMediaMaxAdapterPubMatic"),
                 .target(name: "AdiscopeMediaMaxAdapterPubMaticMediationAdapter"),
                 .target(name: "OpenWrapSDK"),
-                .target(name: "OMSDK_Pubmatic"),
                 .product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package"),
             ],
             path: "Sources"
         ),
         .binaryTarget(
             name: "AdiscopeMediaMaxAdapterPubMatic",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.0/AdiscopeMediaMaxAdapterPubMatic.zip",
-            checksum: "184c9b00a53b65132bed8d9cfc011c64c92ed977b1e08b3c4305682c72a15083"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.4.0/AdiscopeMediaMaxAdapterPubMatic.zip",
+            checksum: "a1c393c56f94d1717d72d5aca20a98aab1c7518910d80d6fdc4fa1f45d5b7f58"
         ),
         .binaryTarget(
             name: "AdiscopeMediaMaxAdapterPubMaticMediationAdapter",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.0/AppLovinMediationPubMaticAdapter.xcframework.zip",
-            checksum: "99e28e74f0194399241d88f3807d6aa8ea7a8343424f88eb8e8bb661d137ba6a"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.4.0/AppLovinMediationPubMaticAdapter.xcframework.zip",
+            checksum: "2dbf3358198743e32f495f77d6a79e7625aed7fab22bffe6a7f8625cb5e55deb"
         ),
         .binaryTarget(
             name: "OpenWrapSDK",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.0/OpenWrapSDK.xcframework.zip",
-            checksum: "71029ead36a01482354fd47a824755fc5967d7dc3a203bf30d1093b58b056059"
-        ),
-        .binaryTarget(
-            name: "OMSDK_Pubmatic",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.0/OMSDK_Pubmatic.xcframework.zip",
-            checksum: "1e7bc27588037ef3d4de478c0dc9e7231eefbeda5e51e4d5e1fa8d2d084dfefd"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.4.0/OpenWrapSDK.xcframework.zip",
+            checksum: "ㄴf4bf97098e620098befd5b67edd1dfa2e0424ae3002f642fe00a006d7db6b08f"
         ),
     ]
 )
