@@ -39,7 +39,7 @@ let package = Package(
         .binaryTarget(
             name: "OpenWrapSDK",
             url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.4.0/OpenWrapSDK.xcframework.zip",
-            checksum: "ㄴf4bf97098e620098befd5b67edd1dfa2e0424ae3002f642fe00a006d7db6b08f"
+            checksum: "f4bf97098e620098befd5b67edd1dfa2e0424ae3002f642fe00a006d7db6b08f"
         ),
     ]
 )
