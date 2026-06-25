@@ -14,6 +14,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.6.2"),
+        .package(url: "https://github.com/PubMatic/OpenWrapSDK-Swift-Package.git", exact: "5.1.0"),
     ],
     targets: [
         .target(
@@ -21,8 +22,8 @@ let package = Package(
             dependencies: [
                 .target(name: "AdiscopeMediaMaxAdapterPubMatic"),
                 .target(name: "AdiscopeMediaMaxAdapterPubMaticMediationAdapter"),
-                .target(name: "OpenWrapSDK"),
                 .product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package"),
+                .product(name: "OpenWrapSDK", package: "OpenWrapSDK-Swift-Package"),
             ],
             path: "Sources"
         ),
@@ -35,11 +36,6 @@ let package = Package(
             name: "AdiscopeMediaMaxAdapterPubMaticMediationAdapter",
             url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.4.0/AppLovinMediationPubMaticAdapter.xcframework.zip",
             checksum: "2dbf3358198743e32f495f77d6a79e7625aed7fab22bffe6a7f8625cb5e55deb"
-        ),
-        .binaryTarget(
-            name: "OpenWrapSDK",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.4.0/OpenWrapSDK.xcframework.zip",
-            checksum: "f4bf97098e620098befd5b67edd1dfa2e0424ae3002f642fe00a006d7db6b08f"
         ),
     ]
 )
